@@ -70,6 +70,16 @@ class dl_List:
             newNode.prevNode = n
         self._size += 1
     
+    # Remove Element at the beggining
+    def removeHead(self):
+        if self.head == None:
+            return False
+        if self.head.newNextNode == None:
+            self.head = None
+            return
+        self.head = self.head.nextNode
+        self.head.prevNode = None
+
 
 
 
