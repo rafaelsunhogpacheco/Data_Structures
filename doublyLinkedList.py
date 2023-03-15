@@ -76,9 +76,22 @@ class dl_List:
             return False
         if self.head.newNextNode == None:
             self.head = None
+            self._size -= 1
             return
         self.head = self.head.nextNode
         self.head.prevNode = None
+        self._size -= 1
+    
+    # Remove Elements at the end
+    def removeTale(self):
+        if self.head == None:
+            return False
+        else:
+            n = self.head
+            while n.nextNode != None:
+                n = n.nextNode
+            n.prevNode.nextNode = None
+            n = None
 
 
 
