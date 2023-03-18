@@ -55,3 +55,22 @@ class binaryTree:
       return aux
          
 
+# Root, left, right
+def PreOrder(self, node):
+   if Node != None:
+      print(node.data)
+      PreOrder(node.left)
+      PreOrder(node.right)
+
+#Left, root, right
+def Order(self, node):
+   if Node != Node:
+      Order(node.left)
+      print(node)
+      Order(node.right)
+
+def PosOrder(self,node):
+   if Node != Node:
+      PosOrder(node.left)
+      PosOrder(node.right)
+      print(node)
