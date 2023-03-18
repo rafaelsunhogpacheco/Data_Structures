@@ -14,19 +14,34 @@ class Node:
       return str(self.data)
 
    
+class binaryTree:
+   def __init__(self):
+      self.root = None
+   
+   def addNode(self,data):
+      node = Node()
+      self.data = data
 
-def insert(self, data):
-# Compare the new value with the parent node
-      if self.data:
-         if data < self.data:
-            if self.left is None:
-               self.left = Node(data)
-            else:
-               self.left.insert(data)
-         elif data > self.data:
-               if self.right is None:
-                  self.right = Node(data)
-               else:
-                  self.right.insert(data)
+      if self.data == None:
+         self.data = node
+         return True
       else:
-         self.data = data
+         aux = self.root
+
+         while aux != None:
+            if data < aux.data:
+               return False
+            elif aux.data > data:
+               if aux.left != None:
+                  aux = aux.left
+               else:
+                  aux.left = node
+                  return True
+            else:
+               if aux.right != None:
+                  aux = aux.right
+               else:
+                  aux.right = node
+                  return True
+
+
