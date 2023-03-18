@@ -43,5 +43,15 @@ class binaryTree:
                else:
                   aux.right = node
                   return True
-
+   def search(self, data):
+      aux = self.root
+      while self.data != data:
+         if self.data < data:
+            aux = aux.left
+         else:
+            aux = aux.right
+         if self.data == None:
+            return None
+      return aux
+         
 
