@@ -1,10 +1,19 @@
 # Binary Tree
 
 class Node:
-    def __init__(self, data):
-        self.data = data
-        self.right = None
-        self.left = None
+   def __init__(self, data):
+      self.data = data
+      self.right = None
+      self.left = None
+   
+   @property
+   def data(self):
+      return self.data
+   
+   def __str__(self):
+      return str(self.data)
+
+   
 
 def insert(self, data):
 # Compare the new value with the parent node
