@@ -35,7 +35,7 @@ class binaryTree:
                if aux._left != None:
                   aux = aux._left
                else:
-                  aux.left = node
+                  aux._left = node
                   return True
             else:
                if aux._right != None:
@@ -43,44 +43,6 @@ class binaryTree:
                else:
                   aux._right = node
                   return True
-   
-
-
-   def inserir(self,valor):
-        nodo = Nodo()
-        nodo._valor = valor
-
-        if self._raiz == None:
-            self._raiz = nodo
-            return True
-        else:
-            aux = self._raiz
-
-            while aux != None:
-                if aux._valor == valor:
-                    print("Valor duplicado!")
-                    return False
-                elif valor < aux._valor:
-                    if aux._esquerda != None:
-                        aux = aux._esquerda
-                    else:
-                        aux._esquerda = nodo
-                        return True
-                else:
-                    if aux._direita != None:
-                        aux = aux._direita
-                    else:
-                        aux._direita = nodo
-                        return True
-
-
-
-
-
-
-
-
-
 
 
    def search(self, data):
@@ -104,7 +66,7 @@ class binaryTree:
 
    #Left, root, right
    def order(self, node):
-      if Node != Node:
+      if node != None:
          self.order(node._left)
          print(node._data)
          self.order(node._right)
