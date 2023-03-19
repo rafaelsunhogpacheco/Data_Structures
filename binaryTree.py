@@ -59,7 +59,7 @@ class binaryTree:
 
    # Root, left, right
    def preOrder(self, node):
-      if Node != None:
+      if node != None:
          print(node._data)
          self.preOrder(node._left)
          self.preOrder(node._right)
@@ -73,7 +73,7 @@ class binaryTree:
 
    #Left, raight, root
    def posOrder(self,node):
-      if Node != Node:
+      if node != None:
          self.posOrder(node._left)
          self.posOrder(node._right)
          print(node._data)
@@ -116,5 +116,12 @@ arvore.addNode(84)
 arvore.addNode(79)
 arvore.display(arvore._root,0)
 
-print('Em ordem:')
-arvore.order(arvore._root)
+# print('Em ordem:')
+# arvore.order(arvore._root)
+
+
+# print('Pos ordem:')
+# arvore.posOrder(arvore._root)
+
+print('Pre Ordem:')
+arvore.preOrder(arvore._root)
