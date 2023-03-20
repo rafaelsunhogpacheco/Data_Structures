@@ -11,11 +11,14 @@ Arvore Binária
 Em construção
 
 ### Features
-#### Lista duplamente encadeada (Double Linked List)
+#### Lista duplamente encadeada (Doubly Linked List)
 
 <p style="text-align:center">
-    <img src="/assets/img/doublyLinkedList.py" alt="Doubly Linked List" style="height: 100px; width:100px;"/>
+    <img src="/assets/img/doubly-linked-list.png" alt="Doubly Linked List" style="height: 100px; width:100px;"/>
 </p>
+
+![Doubly Linked List](/assets/img/doubly-linked-list.png "Doubly Linked List")
+
 
 * Classe Node (Nodo) e Class Dl_List (Lista)
 
