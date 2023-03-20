@@ -1,8 +1,8 @@
 # Linked List
 
 class Node:
-    def __init__(self):
-        self._data = None
+    def __init__(self,data):
+        self._data = data
         self._nextNode = None
         self._prevNode = None
     
@@ -29,6 +29,9 @@ class Node:
     @prevNode.setter
     def newPrevNode(self,newPrevNode):
         self._prevNode = newPrevNode
+    
+    def __str__(self):
+        return f"{self.data}"
 
 
 class dl_List:
@@ -45,7 +48,7 @@ class dl_List:
             return False
         
         # Insert Element to Empty list
-        if self.head == None:
+        if self._head == None:
             self.head = newNode
             self.tale = newNode
         else:
@@ -66,8 +69,8 @@ class dl_List:
             while n.nextNode != None:
                 n = n.nextNode
             newNode = Node(data)
-            n.nextNode = newNode
-            newNode.prevNode = n
+            n._nextNode = newNode
+            newNode._prevNode = n
         self._size += 1
     
     # Remove Element at the beggining
@@ -79,7 +82,7 @@ class dl_List:
             self._size -= 1
             return
         self.head = self.head.nextNode
-        self.head.prevNode = None
+        self.head._prevNode = None
         self._size -= 1
     
     # Remove Elements at the end
@@ -90,9 +93,39 @@ class dl_List:
             n = self.head
             while n.nextNode != None:
                 n = n.nextNode
-            n.prevNode.nextNode = None
+            n.prevNode._nextNode = None
             n = None
+    
+    def __str__(self):
+        if self._size == 0:
+            return "Empty list"
+        elif self._size == 1:
+            return f"{self.head}"
+        else:
+            ref = self.head
+            group = ""
+            while ref.nextNode is not None:
+                group += f"{ref}, "
+                ref = ref.nextNode
+            group += f"{ref}"
+            return group
 
 
 
 
+
+
+lista = dl_List()
+
+lista.addHead(5)
+lista.addTale(8)
+lista.addTale(7)
+lista.addHead(1)
+
+
+# lista.removeHead()
+# lista.removeTale()
+
+
+
+print(lista)
