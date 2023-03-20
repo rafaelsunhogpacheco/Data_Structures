@@ -14,7 +14,7 @@ Em construção
 #### Lista duplamente encadeada (Double Linked List)
 
 <p style="text-align:center">
-    <img src="D:\Documentos\Mentoria\Projeto3_DataStructures\img\doubly-linked-list.png" alt="Doubly Linked List" style="height: 100px; width:100px;"/>
+    <img src="/assets/img/doublyLinkedList.py" alt="Doubly Linked List" style="height: 100px; width:100px;"/>
 </p>
 
 * Classe Node (Nodo) e Class Dl_List (Lista)
