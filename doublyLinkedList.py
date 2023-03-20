@@ -48,11 +48,12 @@ class dl_List:
             return False
         
         # Insert Element to Empty list
-        if self._head == None:
+        if self._head is None:
             self.head = newNode
             self.tale = newNode
         else:
-            self.head.prevNode = newNode
+            self._head.prevNode = newNode
+            newNode.nextNode = self.head
             self.head = newNode
         self._size += 1
     
@@ -118,9 +119,11 @@ class dl_List:
 lista = dl_List()
 
 lista.addHead(5)
+print(lista)
 lista.addTale(8)
 lista.addTale(7)
-lista.addHead(1)
+# lista.addHead(1)
+# lista.addHead(9)
 
 
 # lista.removeHead()
