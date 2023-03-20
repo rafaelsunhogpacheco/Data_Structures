@@ -97,8 +97,12 @@ class binaryTree:
 
 
 
-arvore = binaryTree()
 
+#################################################
+# Testing
+
+
+# arvore = binaryTree()
 
 
 

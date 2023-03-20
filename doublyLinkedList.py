@@ -39,6 +39,31 @@ class dl_List:
         self._head = None
         self._tale = None
         self._size = 0
+
+    @property
+    def head(self):
+        return self._head
+
+    @head.setter
+    def head(self, newHead):
+        self._head = newHead
+
+    @property
+    def tale(self):
+        return self._tale
+
+    @tale.setter
+    def tale(self, newTale):
+        self._tale = newTale
+
+    @property
+    def size(self):
+        return self._size
+
+    @size.setter
+    def size(self, newSize):
+        self._size = newSize
+
     
     # Insert Element at the beggining
     def addHead(self,data):
@@ -52,8 +77,8 @@ class dl_List:
             self.head = newNode
             self.tale = newNode
         else:
-            self._head.prevNode = newNode
-            newNode.nextNode = self.head
+            self.head._prevNode = newNode
+            newNode._nextNode = self.head
             self.head = newNode
         self._size += 1
     
@@ -114,14 +139,19 @@ class dl_List:
 
 
 
+#################################################
+# Testing
+
+# lista = dl_List()
 
 
-lista = dl_List()
 
-lista.addHead(5)
-print(lista)
-lista.addTale(8)
-lista.addTale(7)
+
+
+# lista.addHead(5)
+# print(lista)
+# lista.addTale(8)
+# lista.addTale(7)
 # lista.addHead(1)
 # lista.addHead(9)
 
@@ -131,4 +161,4 @@ lista.addTale(7)
 
 
 
-print(lista)
+# print(lista)
