@@ -13,10 +13,6 @@ Em construção
 ### Features
 #### Lista duplamente encadeada (Doubly Linked List)
 
-<p style="text-align:center">
-    <img src="/assets/img/doubly-linked-list.png" alt="Doubly Linked List" style="height: 100px; width:100px;"/>
-</p>
-
 ![Doubly Linked List](/assets/img/doubly-linked-list.png "Doubly Linked List")
 
 
@@ -29,6 +25,9 @@ Em construção
 
 
 #### Arvore Binária (Binary Tree)
+
+![Binary Tree](/assets/img/Binary_tree.png "Binary Tree")
+
 * Classe Node (Nodo) e Class Dl_List (Lista)
 
 * Procura um nodo na árvore (Search)
