@@ -1,7 +1,10 @@
 # Data_Structures
 Implementação de Estruturas de Dados
 Lista duplamente encadeada
+* doublyLinkedList.py
+
 Arvore Binária
+* binaryTree.py
 
 
 ### Status do Projeto:

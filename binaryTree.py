@@ -102,26 +102,26 @@ class BinaryTree:
 # Testing
 
 
-arvore = BinaryTree()
+# arvore = BinaryTree()
 
 
 
-arvore.addNode(53)
-arvore.addNode(30)
-arvore.addNode(72)
-arvore.addNode(14)
-arvore.addNode(39)
-arvore.addNode(9)
-arvore.addNode(23)
-arvore.addNode(34)
-arvore.addNode(49)
-arvore.addNode(61)
-arvore.addNode(84)
-arvore.addNode(79)
-arvore.display(arvore._root,0)
+# arvore.addNode(53)
+# arvore.addNode(30)
+# arvore.addNode(72)
+# arvore.addNode(14)
+# arvore.addNode(39)
+# arvore.addNode(9)
+# arvore.addNode(23)
+# arvore.addNode(34)
+# arvore.addNode(49)
+# arvore.addNode(61)
+# arvore.addNode(84)
+# arvore.addNode(79)
+# arvore.display(arvore._root,0)
 
-print('Em ordem:')
-arvore.order(arvore._root)
+# print('Em ordem:')
+# arvore.order(arvore._root)
 
 
 # print('Pos ordem:')

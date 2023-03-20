@@ -142,23 +142,23 @@ class Dl_List:
 #################################################
 # Testing
 
-lista = Dl_List()
+# lista = Dl_List()
 
 
 
 
 
-lista.addHead(5)
-print(lista)
-lista.addTale(8)
-lista.addTale(7)
-lista.addHead(1)
-lista.addHead(9)
+# lista.addHead(5)
+# print(lista)
+# lista.addTale(8)
+# lista.addTale(7)
+# lista.addHead(1)
+# lista.addHead(9)
 
 
-lista.removeHead()
-lista.removeTale()
+# lista.removeHead()
+# lista.removeTale()
 
 
 
-print(lista)
+# print(lista)
